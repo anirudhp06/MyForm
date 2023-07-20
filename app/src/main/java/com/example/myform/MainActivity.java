@@ -4,21 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
     public static final String Efn="com.example.myform.Efn";
     public static final String Eusn="com.example.myform.Eusn";
     public static final String Edp="com.example.myform.Edp";
-    Button btn=(Button) findViewById(R.id.submit);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Button btn=(Button) findViewById(R.id.submit);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra(Efn,name);
         i.putExtra(Eusn,usn);
         i.putExtra(Edp,dept);
-        setIntent(i);
+        Log.d("MainActivity","Sent:"+Efn+":"+name);
+        Log.d("MainActivity","Sent:"+Eusn+":"+usn);
+        Log.d("MainActivity","Sent:"+Edp+":"+dept);
+        startActivity(i);
     }
 }
