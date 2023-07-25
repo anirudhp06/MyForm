@@ -41,9 +41,10 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra(Efn,name);
         i.putExtra(Eusn,usn);
         i.putExtra(Edp,dept);
-        Log.d("MainActivity","Sent:"+Efn+":"+name);
-        Log.d("MainActivity","Sent:"+Eusn+":"+usn);
-        Log.d("MainActivity","Sent:"+Edp+":"+dept);
+// Ignore the Lod.d() command used it for debugging
+//        Log.d("MainActivity","Sent:"+Efn+":"+name);
+//        Log.d("MainActivity","Sent:"+Eusn+":"+usn);
+//        Log.d("MainActivity","Sent:"+Edp+":"+dept);
         startActivity(i);
     }
 }

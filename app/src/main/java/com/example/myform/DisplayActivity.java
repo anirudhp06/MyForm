@@ -25,10 +25,10 @@ public class DisplayActivity extends AppCompatActivity {
         String receivedUsn=ii.getStringExtra(Eusn);
         String receivedDept=ii.getStringExtra(Edp);
 
-
-        Log.d("DisplayActivity","Received Name:"+receivedName);
-        Log.d("DisplayActivity","Received Name:"+receivedUsn);
-        Log.d("DisplayActivity","Received Name:"+receivedDept);
+// Ignore the Log.d() commands wrote them for debugging
+//        Log.d("DisplayActivity","Received Name:"+receivedName);
+//        Log.d("DisplayActivity","Received Name:"+receivedUsn);
+//        Log.d("DisplayActivity","Received Name:"+receivedDept);
 
         name.setText(receivedName);
         usn.setText(receivedUsn);
